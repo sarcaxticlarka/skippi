@@ -116,6 +116,13 @@
     background: #E71606;
     border-radius: 10px;
     left: 50%;
+    transition: all 0.3s ease;
+}
+
+.shop h3:hover {
+    background: #fb1b0a;
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 5px 15px rgba(231, 22, 6, 0.4);
 }
 
 #curve {

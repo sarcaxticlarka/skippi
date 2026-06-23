@@ -16,6 +16,9 @@ import InsideStorySection from "@/components/InsideStorySection";
 import FoundersSection from "@/components/FoundersSection";
 import HotSellingSection from "@/components/HotSellingSection";
 import Footer from "@/components/Footer";
+import CartDrawer from "@/components/CartDrawer";
+import StoreLocatorModal from "@/components/StoreLocatorModal";
+import ToastNotification from "@/components/ToastNotification";
 
 export default function Home() {
   useEffect(() => {
@@ -456,6 +459,9 @@ export default function Home() {
       <FoundersSection />
       <HotSellingSection />
       <Footer />
+      <CartDrawer />
+      <StoreLocatorModal />
+      <ToastNotification />
     </div>
   );
 }

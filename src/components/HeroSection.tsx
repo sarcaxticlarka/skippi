@@ -1,7 +1,16 @@
+"use client";
+
 import React from "react";
 import Navbar from "./Navbar";
 
 export default function HeroSection() {
+  const scrollToFlavors = () => {
+    const flavorSec = document.querySelector(".page4");
+    if (flavorSec) {
+      flavorSec.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="page1">
       <Navbar />
@@ -11,7 +20,9 @@ export default function HeroSection() {
             welcome summer : get 15% flat discount on orders value ₹300 & above plus free
             shipping, spread love with skippi | check our delightful combos.
           </p>
-          <h3>shop now</h3>
+          <h3 onClick={scrollToFlavors} style={{ cursor: "pointer", transition: "all 0.2s" }} className="shop-btn">
+            shop now
+          </h3>
         </div>
         <svg width="300" height="150">
           <path id="curve" d="M 0 120 C 0 120, 130 0, 260 120"></path>

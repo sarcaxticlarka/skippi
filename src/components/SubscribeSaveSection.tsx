@@ -1,6 +1,22 @@
+"use client";
+
 import React from "react";
+import { useCart } from "@/context/CartContext";
 
 export default function SubscribeSaveSection() {
+  const { addToCart, setIsCartOpen } = useCart();
+
+  const handleOrderNow = () => {
+    addToCart({
+      id: "royal-collection",
+      name: "Royal Collection Box",
+      price: 699,
+      image: "/assets/pic23.webp",
+      color: "#FFC901",
+    });
+    setIsCartOpen(true);
+  };
+
   return (
     <div className="page6">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
@@ -42,7 +58,9 @@ export default function SubscribeSaveSection() {
           <div className="royal">
             <h2>Royal Collection</h2>
             <p>Limited Edition New Assortment collections.</p>
-            <button>Order Now</button>
+            <button onClick={handleOrderNow} style={{ cursor: "pointer" }}>
+              Order Now
+            </button>
           </div>
         </div>
       </div>

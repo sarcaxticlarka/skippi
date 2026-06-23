@@ -1,6 +1,67 @@
+"use client";
+
 import React from "react";
+import { useCart } from "@/context/CartContext";
 
 export default function ExploreFlavorSection() {
+  const { addToCart, setStoreLocatorOpen } = useCart();
+
+  const scrollToHotSelling = () => {
+    const el = document.querySelector(".page10");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const flavors = [
+    {
+      id: "bubble-gum",
+      name: "Yum Yum Bubble Gum",
+      price: 240,
+      image: "/assets/pic14.webp",
+      color: "#E3005C",
+      prodId: "prod1",
+    },
+    {
+      id: "lemon",
+      name: "Lemon-o-Licious",
+      price: 240,
+      image: "/assets/pic15.webp",
+      color: "#34B900",
+      prodId: "prod2",
+    },
+    {
+      id: "cola",
+      name: "Refreshing Cola",
+      price: 240,
+      image: "/assets/pic16.webp",
+      color: "#710201",
+      prodId: "prod3",
+    },
+    {
+      id: "orange",
+      name: "Tengy Orange",
+      price: 240,
+      image: "/assets/pic17.webp",
+      color: "#FB2200",
+      prodId: "prod4",
+    },
+    {
+      id: "raspberry",
+      name: "Raspberry Freshness",
+      price: 240,
+      image: "/assets/pic18.webp",
+      color: "#8C014B",
+      prodId: "prod5",
+    },
+    {
+      id: "mango",
+      name: "Juicy Mango",
+      price: 240,
+      image: "/assets/pic19.webp",
+      color: "#FFCC07",
+      prodId: "prod6",
+    },
+  ];
+
   return (
     <div className="page4">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
@@ -14,63 +75,40 @@ export default function ExploreFlavorSection() {
         <div className="explore">
           <h1>EXPLORE FLAVOR</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, illum.</p>
-          <button>SHOP ALL</button>
+          <button onClick={scrollToHotSelling} style={{ cursor: "pointer" }}>
+            SHOP ALL
+          </button>
         </div>
         <div className="buyprod">
-          <div className="prod" id="prod1">
-            <h2>Yum Yum Bubble Gum</h2>
-            <img src="/assets/pic14.webp" alt="Yum Yum Bubble Gum" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
-            <div className="btn">
-              <button>BUY NOW</button>
-              <button>BUY IN STORES</button>
+          {flavors.map((flav) => (
+            <div className="prod" id={flav.prodId} key={flav.id}>
+              <h2>{flav.name}</h2>
+              <img src={flav.image} alt={flav.name} />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
+              <div className="btn">
+                <button
+                  onClick={() =>
+                    addToCart({
+                      id: flav.id,
+                      name: flav.name,
+                      price: flav.price,
+                      image: flav.image,
+                      color: flav.color,
+                    })
+                  }
+                  style={{ cursor: "pointer" }}
+                >
+                  BUY NOW
+                </button>
+                <button
+                  onClick={() => setStoreLocatorOpen(true)}
+                  style={{ cursor: "pointer" }}
+                >
+                  BUY IN STORES
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="prod p" id="prod2">
-            <h2>Lemon-o-Licious</h2>
-            <img src="/assets/pic15.webp" alt="Lemon-o-Licious" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
-            <div className="btn">
-              <button>BUY NOW</button>
-              <button>BUY IN STORES</button>
-            </div>
-          </div>
-          <div className="prod" id="prod3">
-            <h2>Refreshing Cola</h2>
-            <img src="/assets/pic16.webp" alt="Refreshing Cola" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
-            <div className="btn">
-              <button>BUY NOW</button>
-              <button>BUY IN STORES</button>
-            </div>
-          </div>
-          <div className="prod" id="prod4">
-            <h2>Tengy Orange</h2>
-            <img src="/assets/pic17.webp" alt="Tengy Orange" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
-            <div className="btn">
-              <button>BUY NOW</button>
-              <button>BUY IN STORES</button>
-            </div>
-          </div>
-          <div className="prod" id="prod5">
-            <h2>Raspberry Freshness</h2>
-            <img src="/assets/pic18.webp" alt="Raspberry Freshness" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
-            <div className="btn">
-              <button>BUY NOW</button>
-              <button>BUY IN STORES</button>
-            </div>
-          </div>
-          <div className="prod" id="prod6">
-            <h2>Juicy Mango</h2>
-            <img src="/assets/pic19.webp" alt="Juicy Mango" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta?</p>
-            <div className="btn">
-              <button>BUY NOW</button>
-              <button>BUY IN STORES</button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

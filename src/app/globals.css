@@ -12,4 +12,7 @@
 @import "../styles/FoundersSection.css";
 @import "../styles/HotSellingSection.css";
 @import "../styles/Footer.css";
+@import "../styles/CartDrawer.css";
+@import "../styles/StoreLocatorModal.css";
+@import "../styles/ToastNotification.css";
 @import "../styles/responsive.css";
