@@ -1,0 +1,14 @@
+@font-face {
+    font-family: f1;
+    src: url(/fonts/Satoshi-Medium.otf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(/fonts/MonaSansCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: f3;
+    src: url(/fonts/MonaSansCondensed-SemiBold.ttf);
+}

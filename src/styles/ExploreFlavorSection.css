@@ -1,0 +1,257 @@
+.page4 {
+    height: 255vh;
+    width: 100%;
+    position: relative;
+    background-color: #FF9BC2;
+}
+
+.page4div {
+    z-index: 99;
+    padding: 6vw 4vw;
+}
+
+.page4 svg {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore h1 {
+    font-family: f2;
+    font-size: 7vw;
+    color: white;
+}
+
+.explore p {
+
+    color: white;
+}
+
+.explore button {
+    margin-top: 1vw;
+    padding: .5vw 1vw;
+    font-family: f2;
+    font-size: 2.1vw;
+    color: #fc0c68;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Add transition for background-color and color */
+
+}
+
+.explore button:hover {
+
+    color: #fff;
+    background-color: #fc0c68;
+
+
+}
+
+
+.buyprod {
+    margin-top: 5vw;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prod {
+    color: #fff;
+    height: 100%;
+    width: 32%;
+    background-color: #fc0c68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5vw;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+}
+
+.prod h2 {
+    font-size: 2vw;
+    font-family: f2;
+    padding-bottom: 1vw;
+}
+
+.prod img {
+    width: 90%;
+    height: 78%;
+    padding-bottom: 1vw;
+    border-radius: 10px;
+}
+
+.prod p {
+
+    width: 80%;
+    text-align: center;
+    padding-bottom: 1vw;
+}
+
+.prod .btn {
+    display: flex;
+    gap: 1vw;
+}
+
+.prod button {
+    color: #fff;
+    padding: 1vw 2vw;
+    font-family: f2;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Add transition for background-color and color */
+
+
+}
+
+#prod1 {
+    background-color: #E3005C;
+}
+
+#prod1 button:nth-child(1) {
+    background-color: #fd3485;
+}
+
+#prod1 button:nth-child(1):hover {
+    background-color: #fd3484c0;
+}
+
+#prod1 button:nth-child(2) {
+    color: #E3005C;
+}
+
+#prod1 button:nth-child(2):hover {
+    color: #fff;
+    background-color: #f53c86;
+}
+
+
+#prod2 {
+    background-color: #34B900;
+}
+
+#prod2 button:nth-child(1) {
+    background-color: #68d23e;
+}
+
+#prod2 button:nth-child(1):hover {
+    background-color: #68d23ed1;
+}
+
+#prod2 button:nth-child(2) {
+    color: #34B900;
+}
+
+#prod2 button:nth-child(2):hover {
+    color: #fff;
+    background-color: #89ff5b;
+}
+
+
+
+#prod3 {
+    background-color: #710201;
+}
+
+#prod3 button:nth-child(1) {
+    background-color: #880d0b;
+}
+
+#prod3 button:nth-child(1):hover {
+    background-color: #7d1a18b0;
+}
+
+#prod3 button:nth-child(2) {
+    color: #710201;
+}
+
+#prod3 button:nth-child(2):hover {
+    color: #fff;
+    background-color: #a52a28;
+}
+
+
+#prod4 {
+
+    z-index: 99;
+    background-color: #FB2200;
+}
+
+#prod4 button:nth-child(1) {
+    background-color: #de2104;
+}
+
+#prod4 button:nth-child(1):hover {
+    background-color: #e01f01ba;
+}
+
+#prod4 button:nth-child(2) {
+    color: #FB2200;
+}
+
+#prod4 button:nth-child(2):hover {
+    color: #fff;
+    background-color: #fb4428;
+}
+
+
+#prod5 {
+
+    z-index: 99;
+    background-color: #8C014B;
+}
+
+#prod5 button:nth-child(1) {
+    background-color: #a20b5b;
+}
+
+#prod5 button:nth-child(1):hover {
+    background-color: #a20b5bc4;
+}
+
+#prod5 button:nth-child(2) {
+    color: #8C014B;
+}
+
+#prod5 button:nth-child(2):hover {
+    color: #fff;
+    background-color: #b62b75;
+}
+
+
+
+#prod6 {
+    z-index: 99;
+    background-color: #FFCC07;
+}
+
+#prod6 button:nth-child(1) {
+    background-color: #e4c023;
+}
+
+#prod6 button:nth-child(1):hover {
+    background-color: #c2a524ad;
+}
+
+#prod6 button:nth-child(2) {
+    color: #FFCC07;
+}
+
+#prod6 button:nth-child(2):hover {
+    color: #fff;
+    background-color: #ffe168fe;
+}
+

@@ -1,0 +1,162 @@
+.page7 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F0E14B;
+}
+
+.page7div {
+    padding: 2vw 1vw 8vw 1vw;
+    padding: 10vw 4vw;
+}
+
+.page7 svg {
+    position: absolute;
+    bottom: -2vw;
+}
+
+.page7 .top {
+    display: flex;
+    gap: 3vw;
+
+}
+
+.page7 .top h1 {
+    color: #fc0c68;
+    font-family: f2;
+    font-size: 15vw;
+    position: relative;
+    /* Required for absolute positioning */
+    animation: moveX 9s linear infinite;
+    /* Adjust duration (5s) as needed */
+}
+
+@keyframes moveX {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%
+    }
+}
+
+.ambassdor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8vw 5vw;
+}
+
+.ambassdor h1 {
+    color: #fc0c68;
+    font-size: 6vw;
+    font-family: f2;
+}
+
+.ambassdor p {
+    color: #fc0c68;
+    font-size: 1.1vw;
+    width: 40%;
+    text-align: center;
+}
+
+.influence {
+    margin-top: 5vw;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.influence .vediocont {
+    border: 1px solid rgba(128, 128, 128, 0.373);
+    border-radius: 2.2vw;
+    height: 100%;
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5vw;
+
+}
+
+.influence .vediocont .content {
+    border: 1px solid rgba(128, 128, 128, 0.373);
+    border-radius: 2.2vw;
+    height: 85%;
+    width: 90%;
+    overflow: hidden;
+}
+
+.influence .vediocont .content video {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.namedetail {
+    margin-top: 1vw;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding: 0 1.1vw;
+}
+
+.namedetail .divl {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: #fc0c68;
+    align-items: center;
+    padding-left: 1vw;
+    gap: .5vw;
+
+}
+
+.namedetail .divl .amimg {
+    height: 3vw;
+    width: 3vw;
+    ;
+}
+
+.namedetail .divl img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.namedetail .divr {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.namedetail .divr h4 {
+    font-size: 1.5vw;
+    color: #fc0c68;
+}
+
+.vediocont:nth-child(1) {
+    top: -2vw;
+    position: relative;
+    rotate: -10deg;
+}
+
+.vediocont:nth-child(2) {
+
+    position: relative;
+    rotate: 6deg;
+}
+
+.vediocont:nth-child(3) {
+    top: -1vw;
+    position: relative;
+    rotate: -5deg;
+}

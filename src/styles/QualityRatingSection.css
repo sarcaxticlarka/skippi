@@ -1,0 +1,99 @@
+.page3 {
+    min-height: 120vh;
+    width: 100%;
+    background-color: #4eceff;
+    position: relative;
+
+
+}
+
+.page3div {
+    padding: 3vw 3vw 8vw 3vw;
+}
+
+.items {
+    display: inline-block;
+    border-radius: 30%;
+    background: #000;
+    padding: 3vw 5vw;
+    position: absolute;
+    /* rotate: 90deg;
+    top: 17vw;
+    right: -9vw; */
+
+}
+
+.page3 svg {
+    bottom: 0;
+    position: absolute;
+}
+
+.items h2 {
+    color: #fff;
+
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: f2;
+}
+
+.items h2 span {
+    font-weight: f2;
+    color: #FFC901;
+}
+
+.items h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2vw;
+    border-bottom: 4px solid #FFC901;
+    display: inline-block;
+}
+
+.rating {
+    top: 42%;
+    height: 60%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.rcont {
+    height: 70%;
+    width: 22%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(75, 75, 75, 0.885)
+}
+
+.rcont img {
+    top: -14vw;
+    left: -6.5vw;
+    position: absolute;
+    scale: 0.5;
+}
+
+.rcont h5 {
+    position: absolute;
+    top: 11.5vw;
+    line-height: 2vw;
+    font-size: 1.9vw;
+    font-weight: 200;
+    text-align: center;
+}
+
+.qual {
+    padding: 1vw 1.5vw;
+    background: #FFF504;
+    border-radius: 10px;
+    color: #f13e37;
+    position: absolute;
+    top: 18vw;
+    rotate: -5deg;
+    box-shadow: 0px 0px 10px rgba(75, 75, 75, 0.885)
+}

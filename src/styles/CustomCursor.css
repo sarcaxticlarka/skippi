@@ -1,0 +1,9 @@
+
+.crsr {
+    height: 16px;
+    width: 16px;
+    background-color: rgba(106, 53, 87, 0.647);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+}

@@ -1,0 +1,62 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "f1";
+}
+
+:root {
+    --light-purple: #f6f1f6;
+    --teal: #68d9ff;
+    --red: #f13e37;
+    --white: white;
+    --light-red: #ff6f66;
+    --lime-green: #c0f93f;
+    --blue: #3882c5;
+    --pink: #fc0c68;
+    --yellow: #f1e14b;
+    --orange: #fa7d18;
+    --black: black;
+    --bg: #4eceff;
+}
+
+/* For WebKit based browsers */
+::-webkit-scrollbar {
+    width: 1px;
+    /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar handle */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color when hovered */
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}

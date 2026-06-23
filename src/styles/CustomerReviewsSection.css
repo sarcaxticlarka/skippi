@@ -1,0 +1,97 @@
+.page5 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FF2344;
+}
+
+.page5div {
+    padding: 10vw 4vw;
+}
+
+.page5 svg {
+    position: absolute;
+    bottom: 0;
+}
+
+.what {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what h2 {
+    font-size: 5vw;
+    font-family: f2;
+    color: #fff;
+}
+
+.what h5 {
+    margin-top: 1vw;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 300;
+    width: 40%;
+    text-align: center;
+}
+
+.review {
+    margin-top: 5vw;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ritem {
+    padding: 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 32%;
+    background-color: #ff7581;
+    border-radius: 1vw;
+}
+
+.ritem h2 {
+    font-size: 3vw;
+    font-family: f2;
+    text-align: center;
+    line-height: 3vw;
+    color: #fff;
+}
+
+.customer {
+    position: relative;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.customer h4 {
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+.customer p {
+    width: 90%;
+    text-align: center;
+    font-weight: light;
+}
+
+.customer .img {
+    position: absolute;
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    bottom: -11vw;
+    overflow: hidden;
+}
+
+.customer .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

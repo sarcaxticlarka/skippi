@@ -1,0 +1,62 @@
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-color: #FE9342;
+    position: relative;
+
+}
+
+.footerdiv {
+    padding: 6vw;
+}
+
+.footerdiv svg {
+    position: absolute;
+    bottom: 0;
+}
+
+.foottop {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footpa {
+    height: 100%;
+    width: 18%;
+
+}
+
+.footpa h1 {
+    margin-bottom: 1.5vw;
+    font-size: 2.5vw;
+    font-family: f2;
+    color: #fff;
+}
+
+.footpa h3 {
+    font-size: 2.2vw;
+    font-family: f2;
+    color: #fff;
+}
+
+.footbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footbottom p {
+    color: #fff;
+}
+
+.footbottom p span {
+    font-family: f2;
+}
+
+.footbottom img {
+    margin-top: 1vw;
+    height: 15vw;
+    width: 40vw;
+}
